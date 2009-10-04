@@ -1,0 +1,16 @@
+*~
+*.bak
+bin/**/*
+bin-groovy/**/*
+.classpath
+.component
+*.log
+.pmd
+.project
+.settings
+.springBeans
+target/**/*
+test/**/*
+web-app/WEB-INF/classes/**/*
+.wtpmodule
+ 
