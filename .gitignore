@@ -15,4 +15,4 @@ web-app/WEB-INF/classes/**/*
 *.iml
 *.ipr
 *.iws
- /target
+target
