@@ -1,6 +1,3 @@
-package utils.os
-
-import utils.fs.FileUtils
 
 /**
  * Clean up the temporary directories. 
