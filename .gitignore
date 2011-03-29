@@ -9,11 +9,10 @@ bin-groovy/**/*
 .project
 .settings
 .springBeans
-target/**/*
 test/**/*
 web-app/WEB-INF/classes/**/*
 .wtpmodule
 *.iml
 *.ipr
 *.iws
- 
+ /target
