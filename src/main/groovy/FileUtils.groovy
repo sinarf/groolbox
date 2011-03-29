@@ -28,7 +28,7 @@ def static emptyDirectory(File directory, verbose = true){
 			ant.fileset(dir: directory, includes: "/**")
 		}
 		println " -- Done."
-	} else println   " -- '$directory' doesn't exists."
+	} else println   "'$directory' doesn't exists."
 }
 
 /**
