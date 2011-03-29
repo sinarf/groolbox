@@ -9,5 +9,4 @@
 
 FileUtils.emptyDirectory System.getenv("TEMP")
 FileUtils.emptyDirectory System.getenv("TMP")
-
-Thread.sleep 5000 // wait 5s before closing the window.
+ConsoleUtils.waitBeforeClosing()
