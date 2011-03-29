@@ -17,6 +17,9 @@
 			<resource>
 				<directory>src/main/scripts</directory>
 			</resource>
+			<resource>
+				<directory>src/main/sh</directory>
+			</resource>
 		</resources>
 		<testSourceDirectory>src/test/groovy</testSourceDirectory>
 		<plugins>
