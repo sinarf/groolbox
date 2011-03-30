@@ -21,4 +21,3 @@ static String todayAsString (){
 }
 
 
-println todayAsString()
