@@ -1,11 +1,19 @@
 
 class UnixUtils {
 
+	
 	static getHomePath () {
 		System.getenv ("HOME")
 	}
 	static File getProfile(){
-		return new File ("${UnixUtils.getHomePath()}/.profile")
+		getHomeFile(".profile")
+	}
+	static File getBashrc(){
+		getHomeFile(".bashrc")
+	}
+	
+	static getHomeFile(String filename){
+		new File ("${UnixUtils.getHomePath()}/$filename")
 	}
 	
 	static main(args){
