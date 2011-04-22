@@ -10,12 +10,10 @@ class WorkstationSetup {
 	final  END_TAG = "### End Groolbox - Do not edit manually, update the script instead ###"
 	final  EOL = '\n'
 
-
-
 	/** 
 	 * Extract the content of the file 
 	 * @param file
-	 * @return
+	 * @return the content of the file without the groolbox edited part. 
 	 */
 	def captureFileContentWithoutGrooboxEditedPart(File file){
 		String newContent = ""
@@ -28,24 +26,29 @@ class WorkstationSetup {
 		}
 
 		if (groolboxContent) // start tag with no end tag
-			throw new RuntimeException( "Start tag wiht no close tag - operation aborted. Please clean the file $file MANUALLY.")
+			throw new RuntimeException( "Start tag with no close tag - operation aborted. Please clean the file $file MANUALLY.")
 		else return newContent
 	}
 
 	def wrapContentInTags (String contentToAppend){
-		START_TAG + EOL + contentToAppend + EOL +	END_TAG + EOL
+		START_TAG  + contentToAppend +	END_TAG + EOL
 	}
+	
 	static main(args){
 		println "Setting up the workstation. "
 
-		File profile = UnixUtils.getProfile()
-		def contentToAppend = """source /home/sinarf/Dropbox/config/linux/profile/devel.cnf
-source /home/sinarf/Dropbox/config/linux/profile/alias.cnf"""
+		File file = UnixUtils.getBashrc()
+		println file.text 
+		println "--------------------------------------------------------"
+		def contentToAppend = """
+source /home/sinarf/Dropbox/config/linux/profile/devel.cnf
+source /home/sinarf/Dropbox/config/linux/profile/alias.cnf
+"""
 		new WorkstationSetup().with {
-			def cleanFileContent = captureFileContentWithoutGrooboxEditedPart( profile)
+			def cleanFileContent = captureFileContentWithoutGrooboxEditedPart(file)
 			def editedContent = wrapContentInTags (contentToAppend) 
-			profile.write(cleanFileContent + EOL + editedContent)
+			file.write(cleanFileContent + EOL + editedContent)
 		}
-		println profile.text
+		println file.text
 	}
 }
