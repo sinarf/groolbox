@@ -16,3 +16,5 @@ web-app/WEB-INF/classes/**/*
 *.ipr
 *.iws
 target
+# vi swap files
+*.sw*
