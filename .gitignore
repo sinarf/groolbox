@@ -1,20 +1,28 @@
-*~
-*.bak
-bin/**/*
-bin-groovy/**/*
+# eclipse IDE files
 .classpath
 .component
-*.log
 .pmd
 .project
 .settings
 .springBeans
-test/**/*
-web-app/WEB-INF/classes/**/*
 .wtpmodule
+
+# intlellj IDEA
 *.iml
 *.ipr
 *.iws
+
+# binary directories
 target
-# vi swap files
+test/**/*
+web-app/WEB-INF/classes/**/*
+bin/**/*
+bin-groovy/**/*
+
+# backup files
 *.sw*
+*~
+*.bak
+
+# log files
+*.log
