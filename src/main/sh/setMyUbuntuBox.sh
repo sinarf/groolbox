@@ -10,7 +10,7 @@ if [ $? -eq 1 ] ; then
 	exit 0
 fi
 sudo ./autoUpdate.sh
-sudo update-java-alternatives -s java-6-sun
+sudo update-java-alternatives -s java-1.7.0-openjdk-i386
 echo "Correct the stupid choice to move the button to the left. "
 gconftool -s --type string /apps/metacity/general/button_layout ":minimize,maximize,close";
 
