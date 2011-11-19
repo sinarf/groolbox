@@ -32,4 +32,4 @@ new File(docFolder).eachFile {	file ->
 	file.delete();
 }
 
-
+Thread.sleep 5000
