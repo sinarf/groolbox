@@ -27,3 +27,6 @@ else
 fi
 # groovy stuff
 groovy ~/Dropbox/dev/groolbox/src/main/groovy/WorkstationSetup.groovy
+
+echo "Install Custom applications"
+sudo dpkg -i /home/sinarf/Dropbox/softs/linux/*.deb
