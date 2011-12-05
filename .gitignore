@@ -7,6 +7,9 @@
 .springBeans
 .wtpmodule
 
+# gradle
+.gradle
+
 # intlellj IDEA
 *.iml
 *.ipr
