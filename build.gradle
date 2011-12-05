@@ -1,0 +1,4 @@
+// build script
+apply plugin: 'groovy'
+apply plugin: 'eclipse' 
+

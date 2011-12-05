@@ -37,7 +37,7 @@ class WorkstationSetup {
 	static main(args){
 		println "Setting up the workstation. "
 
-		File file = UnixUtils.getBashrc()
+		File file = UnixUtils.profile
 		println file.text 
 		println "--------------------------------------------------------"
 		def contentToAppend = """
@@ -49,6 +49,6 @@ source /home/sinarf/Dropbox/config/linux/profile/alias.cnf
 			def editedContent = wrapContentInTags (contentToAppend) 
 			file.write(cleanFileContent + EOL + editedContent)
 		}
-		println file.text
+		
 	}
 }
