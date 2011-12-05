@@ -21,6 +21,7 @@ test
 web-app/WEB-INF/classes
 bin
 bin-groovy
+build
 
 # backup files
 *.sw*
