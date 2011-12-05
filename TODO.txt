@@ -1,0 +1,4 @@
+things to do on this project. 
+
+TODO Move from maven to gradle because that's what the cool kids are doing.
+TODO SetUp a simplier way to setup new machine. 
