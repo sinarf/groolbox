@@ -17,10 +17,10 @@
 
 # binary directories
 target
-test/**/*
-web-app/WEB-INF/classes/**/*
-bin/**/*
-bin-groovy/**/*
+test
+web-app/WEB-INF/classes
+bin
+bin-groovy
 
 # backup files
 *.sw*
