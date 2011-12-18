@@ -26,5 +26,6 @@ groovy ~/Dropbox/dev/groolbox/src/main/groovy/WorkstationSetup.groovy
 
 echo "Install Custom applications"
 sudo dpkg -i /home/sinarf/Dropbox/softs/linux/*.deb
-
+echo "Killing nautilus to enable the new extensions: Dropbox, rabbitvcs"
+killall nautilus&
 sudo update-java-alternatives -s java-1.7.0-openjdk-i386
