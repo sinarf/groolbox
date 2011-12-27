@@ -15,5 +15,3 @@ sudo apt-get -y -qq autoremove
 echo "Update everything" 
 sudo apt-get -y -qq update &&\
 sudo apt-get -y -qq upgrade
-
-

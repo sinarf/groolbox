@@ -1,0 +1,24 @@
+dvcs-autosync
+vim
+git
+giggle
+maven2
+gpodder
+screen
+filezilla
+freeplane
+hplip-gui hplip
+aspell-fr aspell-en
+frozen-bubble
+wine
+exuberant-ctags
+mercurial 
+bzr
+startupmanager
+gradle
+gitmagic
+subversion
+openssh-server
+lm-sensors
+lame
+seamonkey
