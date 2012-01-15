@@ -22,3 +22,5 @@ openssh-server
 lm-sensors
 lame
 seamonkey
+subversion
+openjdk-7-jre
