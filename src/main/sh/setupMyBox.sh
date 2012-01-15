@@ -10,8 +10,9 @@
 # 	exit 0
 # fi
 
-#echo "Git integration in Nautilus"
-#sudo add-apt-repository ppa:rabbitvcs/ppa
+echo "Git integration in Nautilus"
+sudo add-apt-repository ppa:rabbitvcs/ppa
+
 
 echo "installing groovy"
 sudo apt-get install -yy groovy 
