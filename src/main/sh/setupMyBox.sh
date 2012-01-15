@@ -17,8 +17,7 @@ sudo add-apt-repository ppa:rabbitvcs/ppa
 echo "installing groovy"
 sudo apt-get install -yy groovy 
 
-sudo groovy autoupdate.groovy
-#sudo ./autoUpdate.sh
+sudo groovy autoUpdate.groovy
 # groovy stuff
-#groovy ~/Dropbox/dev/groolbox/src/main/groovy/WorkstationSetup.groovy
+groovy ~/Dropbox/dev/groolbox/src/main/groovy/WorkstationSetup.groovy
 
